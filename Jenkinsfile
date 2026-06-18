@@ -16,7 +16,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/your-repo.git'
+                    url: 'https://github.com/AdityaJadhavrao/Orange_HRM_Automation.git'
             }
         }
 
@@ -66,4 +66,4 @@ pipeline {
             echo 'Build FAILED ❌ - check logs'
         }
     }
-}
+}   
