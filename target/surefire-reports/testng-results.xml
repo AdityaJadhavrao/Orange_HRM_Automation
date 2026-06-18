@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-18T14:56:39 IST" name="Surefire suite" finished-at="2026-06-18T14:57:40 IST" duration-ms="61576">
+  <suite started-at="2026-06-18T18:58:44 IST" name="Surefire suite" finished-at="2026-06-18T19:00:09 IST" duration-ms="84445">
     <groups>
     </groups>
-    <test started-at="2026-06-18T14:56:39 IST" name="Surefire test" finished-at="2026-06-18T14:57:40 IST" duration-ms="61576">
+    <test started-at="2026-06-18T18:58:44 IST" name="Surefire test" finished-at="2026-06-18T19:00:09 IST" duration-ms="84445">
       <class name="com.automation.ORGTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:55:25 IST" name="setUp" finished-at="2026-06-18T14:56:39 IST" duration-ms="73804" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T18:58:33 IST" name="setUp" finished-at="2026-06-18T18:58:44 IST" duration-ms="11107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:56:39 IST" name="verifyLoginPageTitle" finished-at="2026-06-18T14:56:39 IST" duration-ms="14" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T18:58:44 IST" name="verifyLoginPageTitle" finished-at="2026-06-18T18:58:44 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:56:39 IST" name="verifyLoginFunctionality" finished-at="2026-06-18T14:56:42 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="3415" status="PASS">
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T18:58:44 IST" name="verifyLoginFunctionality" finished-at="2026-06-18T18:58:50 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="5597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFunctionality -->
-        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:56:42 IST" name="dashBoardFunctionality" finished-at="2026-06-18T14:57:08 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="25712" status="PASS">
+        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T18:58:50 IST" name="dashBoardFunctionality" finished-at="2026-06-18T18:59:30 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="40555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardFunctionality -->
-        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:57:08 IST" name="recruitmentFunctionality" finished-at="2026-06-18T14:57:40 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="32412" status="PASS">
+        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T18:59:30 IST" name="recruitmentFunctionality" finished-at="2026-06-18T19:00:09 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="38255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitmentFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T14:57:40 IST" name="tearDown" finished-at="2026-06-18T14:57:40 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@41ee392b]" started-at="2026-06-18T19:00:09 IST" name="tearDown" finished-at="2026-06-18T19:00:09 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
