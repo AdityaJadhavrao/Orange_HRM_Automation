@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.ORGTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 135.727 s - in com.automation.ORGTest
