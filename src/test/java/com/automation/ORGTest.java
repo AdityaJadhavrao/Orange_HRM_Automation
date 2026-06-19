@@ -1,7 +1,7 @@
 package com.automation;
 
 import org.testng.annotations.Test;
-
+import com.automation.utils.ConfigReader;
 import org.testng.Assert;
 
 public class ORGTest extends BaseClass {
@@ -24,9 +24,10 @@ public class ORGTest extends BaseClass {
     @Test(dependsOnMethods = "verifyLoginPageTitle")
     public void verifyLoginFunctionality() throws InterruptedException
     {
+      ConfigReader config = new ConfigReader();
       login = new LoginPage(driver);
-      login.enterUsername("admin");
-      login.enterPassword("admin123");
+      login.enterUsername(config.getProperty("username"));
+      login.enterPassword(config.getProperty("password"));
       login.loginButtonClick();
       Thread.sleep(2000);
     }

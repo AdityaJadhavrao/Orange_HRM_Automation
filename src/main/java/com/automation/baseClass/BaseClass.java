@@ -1,5 +1,6 @@
 package com.automation;
 
+import java.io.ObjectInputFilter.Config;
 import java.time.Duration;
 import java.util.Map;
 import java.util.HashMap;
@@ -11,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import com.automation.utils.ConfigReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -38,7 +40,9 @@ public class BaseClass {
 
         driver = new ChromeDriver(option);
 
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        ConfigReader config = new ConfigReader();
+
+        driver.get(config.getProperty("url"));
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
