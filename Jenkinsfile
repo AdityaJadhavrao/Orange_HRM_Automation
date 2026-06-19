@@ -1,6 +1,5 @@
 pipeline {
 
-```
 agent any
 
 tools {
@@ -55,10 +54,8 @@ post {
 
         echo 'Archiving reports...'
 
-        archiveArtifacts artifacts: '''
-            target/surefire-reports/**
-            test-output/**
-        ''', allowEmptyArchive: true
+        archiveArtifacts artifacts: 'target/surefire-reports/**,test-output/**',
+                         allowEmptyArchive: true
 
         publishHTML([
             allowMissing: true,
@@ -78,6 +75,5 @@ post {
         echo 'Build FAILED - Check console logs'
     }
 }
-```
 
 }
