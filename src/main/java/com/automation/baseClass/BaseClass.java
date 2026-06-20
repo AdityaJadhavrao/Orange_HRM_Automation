@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.baseClass;
 
 import java.io.ObjectInputFilter.Config;
 import java.time.Duration;
@@ -18,7 +18,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeSuite
 

@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.pageClasses;
 
 import java.time.Duration;
 import java.util.List;
@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.automation.baseClass.BaseClass;
 
 public class DashBoardPage extends BaseClass{
 

@@ -7,6 +7,9 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.automation.utils.ExtentManager;
+import com.automation.utils.ScreenshotUtil;
+import com.automation.baseClass.BaseClass;
+import com.automation.baseClass.BaseClass;
 
 public class TestListener implements ITestListener {
 
@@ -28,8 +31,23 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result)
+    {   
+    test.fail(result.getThrowable());
+
+        String path =
+            ScreenshotUtil.captureScreenshot(
+                    BaseClass.driver,
+                    result.getMethod().getMethodName());
+
+    try
     {
-        test.fail(result.getThrowable());
+        test.addScreenCaptureFromPath(path);
+    }
+    catch(Exception e)
+    {
+        e.printStackTrace();
+    }
+    
     }
 
     @Override

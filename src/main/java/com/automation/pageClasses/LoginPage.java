@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.pageClasses;
 
 import java.time.Duration;
 
@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.automation.baseClass.BaseClass;
 
 
 public class LoginPage extends BaseClass {

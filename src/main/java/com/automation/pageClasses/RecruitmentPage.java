@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.pageClasses;
 
 import java.time.Duration;
 import java.util.*;
@@ -11,6 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.automation.baseClass.BaseClass;
 
 public class RecruitmentPage extends BaseClass {
 
@@ -47,23 +48,7 @@ public class RecruitmentPage extends BaseClass {
 
     public void candidateList()
     {
-        int count = 0;
-
-        Map<String,Integer> map = new LinkedHashMap<>();
-
-        for(WebElement list : candidateList)
-        {
-            String name = list.getText().trim();
-
-            ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", list);
-
-            map.put(name, map.getOrDefault(name, 0)+1);
-
-            for(Map.Entry<String,Integer> entry : map.entrySet())
-            {
-                count = entry.getValue();
-            }
-        }
+        int count = candidateList.size();
 
         System.out.println("Total number of candidates and their names  : " + count);
     }

@@ -1,7 +1,8 @@
-com/automation/RecruitmentPage.class
-com/automation/LoginPage.class
+com/automation/pageClasses/DashBoardPage.class
+com/automation/pageClasses/RecruitmentPage.class
 com/automation/utils/ConfigReader.class
-com/automation/DashBoardPage.class
-com/automation/BaseClass.class
+com/automation/pageClasses/LoginPage.class
+com/automation/baseClass/BaseClass.class
 com/automation/listeners/TestListener.class
 com/automation/utils/ExtentManager.class
+com/automation/utils/ScreenshotUtil.class
