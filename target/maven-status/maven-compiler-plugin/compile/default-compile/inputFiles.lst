@@ -5,4 +5,5 @@
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/baseClass/BaseClass.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/pageClasses/RecruitmentPage.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/utils/ScreenshotUtil.java
+/home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/utils/CleanupUtil.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/listeners/TestListener.java

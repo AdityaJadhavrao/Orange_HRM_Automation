@@ -11,7 +11,7 @@
 
         <File name="FileAppender"
               fileName="Logs/automation.log"
-              append="true">
+              append="false">
 
             <PatternLayout
                 pattern="%d{yyyy-MM-dd HH:mm:ss} %-5level %c - %msg%n"/>

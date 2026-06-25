@@ -12,6 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import com.automation.utils.CleanupUtil;
 import com.automation.utils.ConfigReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -45,6 +47,7 @@ public class BaseClass {
         driver = new ChromeDriver(option);
 
         ConfigReader config = new ConfigReader();
+        CleanupUtil.clearArtifacts();
 
         driver.get(config.getProperty("url"));
         logger.info("Application Launched Successfully");
