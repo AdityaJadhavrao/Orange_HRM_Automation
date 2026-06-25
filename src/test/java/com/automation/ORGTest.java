@@ -31,9 +31,7 @@ public class ORGTest extends BaseClass {
     {
       ConfigReader config = new ConfigReader();
       login = new LoginPage(driver);
-      login.enterUsername(config.getProperty("username"),config.getProperty("password"));
-      // login.enterPassword(config.getProperty("password"));
-      // login.loginButtonClick();
+      login.credentials(config.getProperty("username"),config.getProperty("password"));
       Thread.sleep(2000);
     }
 
@@ -43,6 +41,7 @@ public class ORGTest extends BaseClass {
       dash = new DashBoardPage(driver);
       dash.listOfMenu();
       Thread.sleep(10000);
+      Assert.assertTrue(false);
     }
 
     @Test(dependsOnMethods = "dashBoardFunctionality")
@@ -54,7 +53,6 @@ public class ORGTest extends BaseClass {
       rec.candidateList();
       Thread.sleep(10000);
       rec.downloadButtonClick();
-      Assert.assertTrue(false);
       Thread.sleep(10000);
     }
 }

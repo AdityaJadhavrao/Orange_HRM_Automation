@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  1 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,24 @@
                     <div class="method-list-content failed suite-OrangeHRM_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="recruitmentFunctionality">recruitmentFunctionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="dashBoardFunctionality">dashBoardFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-OrangeHRM_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="hide-methods skipped suite-OrangeHRM_Suite"> (hide)</a> <!-- hide-methods skipped suite-OrangeHRM_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="show-methods skipped suite-OrangeHRM_Suite"> (show)</a> <!-- show-methods skipped suite-OrangeHRM_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-OrangeHRM_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="recruitmentFunctionality">recruitmentFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-OrangeHRM_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,11 +129,6 @@
                       <a href="#" panel-name="suite-OrangeHRM_Suite" class="show-methods passed suite-OrangeHRM_Suite"> (show)</a> <!-- show-methods passed suite-OrangeHRM_Suite -->
                     </span>
                     <div class="method-list-content passed suite-OrangeHRM_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="dashBoardFunctionality">dashBoardFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="verifyLoginFunctionality">verifyLoginFunctionality</a> <!-- method navigator-link -->
@@ -150,11 +159,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="recruitmentFunctionality">
-                  </a> <!-- recruitmentFunctionality -->
-                  <span class="method-name">recruitmentFunctionality</span>
+                  <a name="dashBoardFunctionality">
+                  </a> <!-- dashBoardFunctionality -->
+                  <span class="method-name">dashBoardFunctionality</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.automation.ORGTest.recruitmentFunctionality(ORGTest.java:57)
+	at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:44)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -162,19 +171,32 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-OrangeHRM_Suite-class-failed -->
+          <div class="suite-OrangeHRM_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.automation.ORGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="recruitmentFunctionality">
+                  </a> <!-- recruitmentFunctionality -->
+                  <span class="method-name">recruitmentFunctionality</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@3f07b12c depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@3f07b12c]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Suite-class-skipped -->
           <div class="suite-OrangeHRM_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.automation.ORGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dashBoardFunctionality">
-                  </a> <!-- dashBoardFunctionality -->
-                  <span class="method-name">dashBoardFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyLoginFunctionality">
@@ -250,24 +272,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dashBoardFunctionality')
 data.setCell(0, 2, 'com.automation.ORGTest')
-data.setCell(0, 3, 25441);
+data.setCell(0, 3, 25255);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'recruitmentFunctionality')
+data.setCell(1, 1, 'verifyLoginFunctionality')
 data.setCell(1, 2, 'com.automation.ORGTest')
-data.setCell(1, 3, 22077);
+data.setCell(1, 3, 4394);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginFunctionality')
+data.setCell(2, 1, 'verifyLoginPageTitle')
 data.setCell(2, 2, 'com.automation.ORGTest')
-data.setCell(2, 3, 13117);
+data.setCell(2, 3, 22);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginPageTitle')
+data.setCell(3, 1, 'recruitmentFunctionality')
 data.setCell(3, 2, 'com.automation.ORGTest')
-data.setCell(3, 3, 22);
+data.setCell(3, 3, 0);
 window.suiteTableData['OrangeHRM_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-OrangeHRM_Suite">
               </div> <!-- times-div-OrangeHRM_Suite -->
             </div> <!-- times-div -->
@@ -300,25 +322,21 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitle</span>
-                <span class="method-start">63537 ms</span>
+                <span class="method-start">61889 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginFunctionality</span>
-                <span class="method-start">63562 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">dashBoardFunctionality</span>
-                <span class="method-start">76684 ms</span>
+                <span class="method-start">61919 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">recruitmentFunctionality</span>
-                <span class="method-start">102129 ms</span>
+                <span class="method-name">dashBoardFunctionality</span>
+                <span class="method-start">66315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">124568 ms</span>
+                <span class="method-start">91940 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -32,30 +32,20 @@ public class LoginPage extends BaseClass {
         this.driver = driver;
     }
 
-    public void enterUsername(String name, String pwd)  // --> (Sting name, String pwd) should be consolidated into a single function
+    public void credentials(String name, String pwd)  // --> (Sting name, String pwd) should be consolidated into a single function
     {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(username));
         username.sendKeys(name);
+        logger.info("Username entered");
+
         wait.until(ExpectedConditions.visibilityOf(password));
         password.sendKeys(pwd);
+        logger.info("Password entered");
 
         wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         loginButton.click();
+        logger.info("Login button clicked");
     }
-
-    // public void enterPassword(String pwd)
-    // {
-    //     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    //     wait.until(ExpectedConditions.visibilityOf(password));
-    //     password.sendKeys(pwd);
-    // }
-
-    // public void loginButtonClick()
-    // {
-    //     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    //     wait.until(ExpectedConditions.elementToBeClickable(loginButton));
-    //     loginButton.click();
-    // }
 
 }

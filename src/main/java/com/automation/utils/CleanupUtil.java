@@ -11,7 +11,7 @@ public class CleanupUtil {
 
        cleanFolder("Screenshots");
        cleanFolder("test-output");
-       cleanFolder("Logs");  // --> Folder is getting deleted but its not recreating it.
+       // cleanFolder("Logs");  // --> Folder is getting deleted but its not recreating it.
     }
 
     private static void cleanFolder(String folderName)
