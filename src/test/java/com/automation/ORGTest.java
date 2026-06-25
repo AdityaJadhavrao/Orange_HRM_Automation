@@ -31,9 +31,9 @@ public class ORGTest extends BaseClass {
     {
       ConfigReader config = new ConfigReader();
       login = new LoginPage(driver);
-      login.enterUsername(config.getProperty("username"));
-      login.enterPassword(config.getProperty("password"));
-      login.loginButtonClick();
+      login.enterUsername(config.getProperty("username"),config.getProperty("password"));
+      // login.enterPassword(config.getProperty("password"));
+      // login.loginButtonClick();
       Thread.sleep(2000);
     }
 

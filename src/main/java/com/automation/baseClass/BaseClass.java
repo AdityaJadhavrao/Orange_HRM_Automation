@@ -15,10 +15,14 @@ import org.testng.annotations.BeforeSuite;
 import com.automation.utils.ConfigReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class BaseClass {
 
     public static WebDriver driver;
+
+    public static Logger logger = LogManager.getLogger(BaseClass.class);
 
     @BeforeSuite
 
@@ -43,6 +47,7 @@ public class BaseClass {
         ConfigReader config = new ConfigReader();
 
         driver.get(config.getProperty("url"));
+        logger.info("Application Launched Successfully");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }

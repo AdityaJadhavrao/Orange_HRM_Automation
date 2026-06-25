@@ -44,19 +44,22 @@ public class RecruitmentPage extends BaseClass {
                 break;
             }
         }
+        logger.info("Clicked on menuList");
     }
 
     public void candidateList()
     {
         int count = candidateList.size();
 
-        System.out.println("Total number of candidates and their names  : " + count);
+        //System.out.println("Total number of candidates and their names  : " + count);
+        logger.info("Total number of candidates and their names : "+count);
     }
 
     public void downloadButtonClick()
     {
 
-        System.out.println("Total number of download icons  : " + downloadIcon.size());
+        //System.out.println("Total number of download icons  : " + downloadIcon.size());
+        logger.info("Total number of download icons  : " + downloadIcon.size());
 
         for(WebElement button : downloadIcon)
         {

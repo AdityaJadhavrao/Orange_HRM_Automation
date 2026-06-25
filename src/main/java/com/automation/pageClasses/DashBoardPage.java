@@ -40,5 +40,6 @@ public class DashBoardPage extends BaseClass{
                 break;
             }
         }
+        logger.info("Clicked o MyInfo");
     }
 }
