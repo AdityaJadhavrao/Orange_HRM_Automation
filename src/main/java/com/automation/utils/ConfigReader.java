@@ -17,8 +17,9 @@ public class ConfigReader {
 
         try {
 
-            FileInputStream fis =
-                    new FileInputStream("/home/prithvirajjadhavrao/Documents/selenium-framework/src/main/resources/config.properties");
+            String path = System.getProperty("user.dir") + "src/main/resources/config.properties";
+
+            FileInputStream fis = new FileInputStream(path);
 
             prop.load(fis);
 
