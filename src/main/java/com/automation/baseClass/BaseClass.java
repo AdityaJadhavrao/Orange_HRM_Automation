@@ -35,7 +35,16 @@ public class BaseClass {
 
         CleanupUtil.clearArtifacts();
 
-        driver = DriverFactory.getDriver(config.getProperty("browser"));
+        String browser = System.getProperty("browser");
+
+        System.out.println("Browser from Maven : " + browser);
+
+        if(browser==null || browser.trim().isEmpty())
+        {
+            browser = config.getProperty("browser");
+        }
+
+        driver = DriverFactory.getDriver(browser);
 
         driver.get(config.getProperty("url"));
 

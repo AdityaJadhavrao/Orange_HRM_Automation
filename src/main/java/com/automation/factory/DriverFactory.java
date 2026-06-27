@@ -19,7 +19,7 @@ public class DriverFactory {
         {
             throw new RuntimeException("Browser name cannot be null or empty.");
         }
-        
+
         switch (browser.toLowerCase()) {
 
             case "chrome":
@@ -48,7 +48,8 @@ public class DriverFactory {
 
             case "edge":
 
-                WebDriverManager.edgedriver().setup();
+                //WebDriverManager.edgedriver().setup();
+                System.out.println("Inside Edge Case");
                 return new EdgeDriver();
 
             default:

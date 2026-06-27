@@ -9,19 +9,70 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">OrangeHRM Suite</th></tr>
-<tr><td><a href="#t0">UI Tests</a></td><td class="num">2</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">39,683</td><td></td><td></td></tr>
+<tr><td><a href="#t0">UI Tests</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">0</td><td class="num">23</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UI Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automation.ORGTest</td><td><a href="#m0">dashBoardFunctionality</a></td><td rowspan="1">1782535858235</td><td rowspan="1">33966</td></tr><tr><th colspan="4">UI Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.automation.ORGTest</td><td><a href="#m1">recruitmentFunctionality</a></td><td rowspan="1">1782535892492</td><td rowspan="1">0</td></tr><tr><th colspan="4">UI Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.automation.ORGTest</td><td><a href="#m2">verifyLoginFunctionality</a></td><td rowspan="1">1782535852841</td><td rowspan="1">5391</td></tr><tr class="passedeven"><td><a href="#m3">verifyLoginPageTitle</a></td><td rowspan="1">1782535852824</td><td rowspan="1">12</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OrangeHRM Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">UI Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.automation.ORGTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1782541307442</td><td rowspan="1">196</td></tr><tr><th colspan="4">UI Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.automation.ORGTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1782541307854</td><td rowspan="1">0</td></tr><tr><th colspan="4">UI Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">com.automation.ORGTest</td><td><a href="#m2">dashBoardFunctionality</a></td><td rowspan="1">1782541307664</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">recruitmentFunctionality</a></td><td rowspan="1">1782541307664</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">verifyLoginFunctionality</a></td><td rowspan="1">1782541307663</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">verifyLoginPageTitle</a></td><td rowspan="1">1782541307659</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>UI Tests</h2><h3 id="m0">com.automation.ORGTest#dashBoardFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:41)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automation.ORGTest#recruitmentFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@765f05af depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@765f05af]
+<h2>UI Tests</h2><h3 id="m0">com.automation.ORGTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at com.automation.factory.DriverFactory.getDriver(DriverFactory.java:53)
+	at com.automation.baseClass.BaseClass.setUp(BaseClass.java:47)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 29 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.ORGTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automation.ORGTest#dashBoardFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automation.ORGTest#verifyLoginFunctionality</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.automation.ORGTest#verifyLoginPageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automation.ORGTest#recruitmentFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automation.ORGTest#verifyLoginFunctionality</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginPageTitle() on instance com.automation.ORGTest@7756c3cd]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automation.ORGTest#verifyLoginPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
+	at com.automation.factory.DriverFactory.getDriver(DriverFactory.java:53)
+	at com.automation.baseClass.BaseClass.setUp(BaseClass.java:47)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
+Driver info: driver.version: EdgeDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+	... 29 more
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

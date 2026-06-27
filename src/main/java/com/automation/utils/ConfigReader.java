@@ -17,7 +17,7 @@ public class ConfigReader {
 
         try {
 
-            String path = System.getProperty("user.dir") + "src/main/resources/config.properties";
+            String path = System.getProperty("user.dir") + "/src/main/resources/config.properties";
 
             FileInputStream fis = new FileInputStream(path);
 
@@ -30,7 +30,7 @@ public class ConfigReader {
 
     }
 
-    // Return same object every time
+    // Return same object every time (Singleton class)
     public static ConfigReader getInstance() {
         return instance;
     }

@@ -1,44 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T10:20:52 IST" name="OrangeHRM Suite" finished-at="2026-06-27T10:21:32 IST" duration-ms="39683">
+  <suite started-at="2026-06-27T11:51:47 IST" name="OrangeHRM Suite" finished-at="2026-06-27T11:51:47 IST" duration-ms="23">
     <groups>
     </groups>
-    <test started-at="2026-06-27T10:20:52 IST" name="UI Tests" finished-at="2026-06-27T10:21:32 IST" duration-ms="39683">
+    <test started-at="2026-06-27T11:51:47 IST" name="UI Tests" finished-at="2026-06-27T11:51:47 IST" duration-ms="23">
       <class name="com.automation.ORGTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:19:31 IST" name="setUp" finished-at="2026-06-27T10:20:52 IST" duration-ms="81046" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:52 IST" name="verifyLoginPageTitle" finished-at="2026-06-27T10:20:52 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:52 IST" name="verifyLoginFunctionality" finished-at="2026-06-27T10:20:58 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="5391" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginFunctionality -->
-        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:58 IST" name="dashBoardFunctionality" finished-at="2026-06-27T10:21:32 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="33966" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="setUp" finished-at="2026-06-27T11:51:47 IST" duration-ms="196" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:41)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at com.automation.factory.DriverFactory.getDriver(DriverFactory.java:53)
+at com.automation.baseClass.BaseClass.setUp(BaseClass.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="verifyLoginPageTitle" finished-at="2026-06-27T11:51:47 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
+at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:60)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:56)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:48)
+at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:44)
+at com.automation.factory.DriverFactory.getDriver(DriverFactory.java:53)
+at com.automation.baseClass.BaseClass.setUp(BaseClass.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:358)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
+error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-124-generic', java.version: '21.0.11'
+Driver info: driver.version: EdgeDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="verifyLoginFunctionality" finished-at="2026-06-27T11:51:47 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginPageTitle() on instance com.automation.ORGTest@7756c3cd]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginPageTitle() on instance com.automation.ORGTest@7756c3cd]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -63,19 +161,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dashBoardFunctionality -->
-        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:21:32 IST" name="recruitmentFunctionality" finished-at="2026-06-27T10:21:32 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyLoginFunctionality -->
+        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="recruitmentFunctionality" finished-at="2026-06-27T11:51:47 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@765f05af depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@765f05af]]]>
+              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@765f05af depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@765f05af]
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -105,7 +203,45 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitmentFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:21:32 IST" name="tearDown" finished-at="2026-06-27T10:21:32 IST" duration-ms="107" status="PASS">
+        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="dashBoardFunctionality" finished-at="2026-06-27T11:51:47 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@7756c3cd depends on not successfully finished methods 
+[com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@7756c3cd]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBoardFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@7756c3cd]" started-at="2026-06-27T11:51:47 IST" name="tearDown" finished-at="2026-06-27T11:51:47 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
