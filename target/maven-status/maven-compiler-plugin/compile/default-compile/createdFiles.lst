@@ -2,6 +2,7 @@ com/automation/pageClasses/DashBoardPage.class
 com/automation/pageClasses/RecruitmentPage.class
 com/automation/utils/ConfigReader.class
 com/automation/pageClasses/LoginPage.class
+com/automation/factory/DriverFactory.class
 com/automation/baseClass/BaseClass.class
 com/automation/listeners/TestListener.class
 com/automation/utils/ExtentManager.class

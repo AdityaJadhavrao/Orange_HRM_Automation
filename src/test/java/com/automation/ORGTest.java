@@ -17,10 +17,7 @@ public class ORGTest extends BaseClass {
 
     @Test(priority = 1)
     public void verifyLoginPageTitle() {
-
-        System.out.println("Test Executed");
-        System.out.println(driver.getTitle());
-
+        
         String expectedTitle = "OrangeHRM";
         String actualTitile = driver.getTitle();
         Assert.assertEquals(expectedTitle, actualTitile);
@@ -29,7 +26,7 @@ public class ORGTest extends BaseClass {
     @Test(dependsOnMethods = "verifyLoginPageTitle")
     public void verifyLoginFunctionality() throws InterruptedException
     {
-      ConfigReader config = new ConfigReader();
+      ConfigReader config = ConfigReader.getInstance();
       login = new LoginPage(driver);
       login.credentials(config.getProperty("username"),config.getProperty("password"));
       Thread.sleep(2000);

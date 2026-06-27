@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.automation.factory.DriverFactory;
 import com.automation.utils.CleanupUtil;
 import com.automation.utils.ConfigReader;
 
@@ -30,28 +31,18 @@ public class BaseClass {
 
     public void setUp()
     {
-        WebDriverManager.chromedriver().setup();
+        ConfigReader config = ConfigReader.getInstance();
 
-        ChromeOptions option = new ChromeOptions();
-        option.addArguments("--disable-notifications");
-        option.addArguments("--disable-infobars");
-        option.addArguments("--disable-popup-blocking");
-
-        Map<String,Object> prefs = new HashMap<>();
-        prefs.put("credentials_enable_service", false);
-        prefs.put("profile.password_manager_enabled", false);
-
-        option.setExperimentalOption("prefs", prefs);
-
-
-        driver = new ChromeDriver(option);
-
-        ConfigReader config = new ConfigReader();
         CleanupUtil.clearArtifacts();
 
+        driver = DriverFactory.getDriver(config.getProperty("browser"));
+
         driver.get(config.getProperty("url"));
+
         logger.info("Application Launched Successfully");
+
         driver.manage().window().maximize();
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
     

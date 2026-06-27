@@ -5,25 +5,37 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    Properties prop;
+    private Properties prop;
 
-    public ConfigReader()
-    {
+    // Only one object
+    private static ConfigReader instance = new ConfigReader();
+
+    // Private constructor
+    private ConfigReader() {
+
         prop = new Properties();
-        try
-        {
-            FileInputStream fis = new FileInputStream("/home/prithvirajjadhavrao/Documents/selenium-framework/src/main/resources/config.properties");
+
+        try {
+
+            FileInputStream fis =
+                    new FileInputStream("/home/prithvirajjadhavrao/Documents/selenium-framework/src/main/resources/config.properties");
+
             prop.load(fis);
+
         }
-        catch(Exception e)
-        {
+        catch(Exception e) {
             e.printStackTrace();
         }
+
     }
 
-    public String getProperty(String key)
-    {
+    // Return same object every time
+    public static ConfigReader getInstance() {
+        return instance;
+    }
+
+    public String getProperty(String key) {
         return prop.getProperty(key);
     }
-    
+
 }

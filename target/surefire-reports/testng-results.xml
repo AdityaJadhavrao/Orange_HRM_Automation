@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-25T15:38:30 IST" name="OrangeHRM Suite" finished-at="2026-06-25T15:39:00 IST" duration-ms="29892">
+  <suite started-at="2026-06-27T10:20:52 IST" name="OrangeHRM Suite" finished-at="2026-06-27T10:21:32 IST" duration-ms="39683">
     <groups>
     </groups>
-    <test started-at="2026-06-25T15:38:30 IST" name="UI Tests" finished-at="2026-06-25T15:39:00 IST" duration-ms="29892">
+    <test started-at="2026-06-27T10:20:52 IST" name="UI Tests" finished-at="2026-06-27T10:21:32 IST" duration-ms="39683">
       <class name="com.automation.ORGTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:37:28 IST" name="setUp" finished-at="2026-06-25T15:38:30 IST" duration-ms="61869" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:19:31 IST" name="setUp" finished-at="2026-06-27T10:20:52 IST" duration-ms="81046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:38:30 IST" name="verifyLoginPageTitle" finished-at="2026-06-25T15:38:30 IST" duration-ms="22" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:52 IST" name="verifyLoginPageTitle" finished-at="2026-06-27T10:20:52 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:38:30 IST" name="verifyLoginFunctionality" finished-at="2026-06-25T15:38:34 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="4394" status="PASS">
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:52 IST" name="verifyLoginFunctionality" finished-at="2026-06-27T10:20:58 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="5391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFunctionality -->
-        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:38:34 IST" name="dashBoardFunctionality" finished-at="2026-06-25T15:38:59 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="25255" status="FAIL">
+        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:20:58 IST" name="dashBoardFunctionality" finished-at="2026-06-27T10:21:32 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="33966" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertTrue(Assert.java:57)
 at org.testng.Assert.assertTrue(Assert.java:67)
-at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:44)
+at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:41)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -67,15 +67,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardFunctionality -->
-        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:39:00 IST" name="recruitmentFunctionality" finished-at="2026-06-25T15:39:00 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
+        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:21:32 IST" name="recruitmentFunctionality" finished-at="2026-06-27T10:21:32 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@3f07b12c depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@3f07b12c]]]>
+              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@765f05af depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@765f05af]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@3f07b12c depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@3f07b12c]
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@765f05af depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@765f05af]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -105,7 +105,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitmentFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@3f07b12c]" started-at="2026-06-25T15:39:00 IST" name="tearDown" finished-at="2026-06-25T15:39:00 IST" duration-ms="126" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@765f05af]" started-at="2026-06-27T10:21:32 IST" name="tearDown" finished-at="2026-06-27T10:21:32 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

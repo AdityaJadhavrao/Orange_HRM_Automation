@@ -1,5 +1,6 @@
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/utils/ConfigReader.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/utils/ExtentManager.java
+/home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/factory/DriverFactory.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/pageClasses/LoginPage.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/pageClasses/DashBoardPage.java
 /home/prithvirajjadhavrao/Documents/selenium-framework/src/main/java/com/automation/baseClass/BaseClass.java
