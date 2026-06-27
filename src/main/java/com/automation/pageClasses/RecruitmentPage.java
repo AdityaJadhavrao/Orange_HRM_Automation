@@ -27,7 +27,6 @@ public class RecruitmentPage extends BaseClass {
     public RecruitmentPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
     }
 
     public void RecruitmentTab()
@@ -38,7 +37,7 @@ public class RecruitmentPage extends BaseClass {
 
             if(my_Info.equalsIgnoreCase(list.getText().trim()))
             {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
                 wait.until(ExpectedConditions.elementToBeClickable(list));
                 list.click();
                 break;
@@ -51,24 +50,22 @@ public class RecruitmentPage extends BaseClass {
     {
         int count = candidateList.size();
 
-        //System.out.println("Total number of candidates and their names  : " + count);
         logger.info("Total number of candidates and their names : "+count);
     }
 
     public void downloadButtonClick()
     {
 
-        //System.out.println("Total number of download icons  : " + downloadIcon.size());
         logger.info("Total number of download icons  : " + downloadIcon.size());
 
         for(WebElement button : downloadIcon)
         {
             if(button.isDisplayed() && button.isEnabled())
             {
-                ((JavascriptExecutor) driver)
+                ((JavascriptExecutor) getDriver())
                 .executeScript("arguments[0].scrollIntoView({block:'center'});", button);
 
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
                 wait.until(ExpectedConditions.elementToBeClickable(button));
 
                 button.click();

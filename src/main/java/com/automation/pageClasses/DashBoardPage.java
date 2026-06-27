@@ -20,7 +20,6 @@ public class DashBoardPage extends BaseClass{
     public DashBoardPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
     }
 
     public void listOfMenu()
@@ -34,7 +33,7 @@ public class DashBoardPage extends BaseClass{
 
             if(my_Info.equalsIgnoreCase(list.getText().trim()))
             {
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
                 wait.until(ExpectedConditions.elementToBeClickable(list));
                 list.click();
                 break;

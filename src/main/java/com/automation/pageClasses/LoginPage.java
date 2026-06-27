@@ -29,12 +29,13 @@ public class LoginPage extends BaseClass {
     public LoginPage(WebDriver driver)
     {
         PageFactory.initElements(driver, this);
-        this.driver = driver;
     }
 
     public void credentials(String name, String pwd)  // --> (Sting name, String pwd) should be consolidated into a single function
     {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        //System.out.println(Thread.currentThread().getName() + " Entering credentials");
+
+        wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(username));
         username.sendKeys(name);
         logger.info("Username entered");

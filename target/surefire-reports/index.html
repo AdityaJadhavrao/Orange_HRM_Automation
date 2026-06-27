@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">OrangeHRM Suite</span>
+              <span class="suite-name border-failed">OrangeHRM Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-OrangeHRM_Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>testng-parallel.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-OrangeHRM_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,  4 skipped,  </span>
+                    <span class="method-stats">8 methods, 2 failed,  2 skipped,  4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="hide-methods failed suite-OrangeHRM_Suite"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="show-methods failed suite-OrangeHRM_Suite"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="dashBoardFunctionality">dashBoardFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="dashBoardFunctionality">dashBoardFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,7 +122,7 @@
                     <div class="method-list-content skipped suite-OrangeHRM_Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="dashBoardFunctionality">dashBoardFunctionality</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="recruitmentFunctionality">recruitmentFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -111,17 +130,36 @@
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="recruitmentFunctionality">recruitmentFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content skipped suite-OrangeHRM_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="hide-methods passed suite-OrangeHRM_Suite"> (hide)</a> <!-- hide-methods passed suite-OrangeHRM_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Suite" class="show-methods passed suite-OrangeHRM_Suite"> (show)</a> <!-- show-methods passed suite-OrangeHRM_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-OrangeHRM_Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="verifyLoginFunctionality">verifyLoginFunctionality</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="verifyLoginFunctionality">verifyLoginFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-OrangeHRM_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Suite" title="com.automation.ORGTest" class="method navigator-link" hash-for-method="verifyLoginPageTitle">verifyLoginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-OrangeHRM_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -133,9 +171,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Suite" class="panel OrangeHRM_Suite">
-          <div class="suite-OrangeHRM_Suite-class-skipped">
+          <div class="suite-OrangeHRM_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.automation.ORGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,10 +182,54 @@
                   <a name="dashBoardFunctionality">
                   </a> <!-- dashBoardFunctionality -->
                   <span class="method-name">dashBoardFunctionality</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@75390459 depends on not successfully finished methods 
-[com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@75390459]
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashBoardFunctionality">
+                  </a> <!-- dashBoardFunctionality -->
+                  <span class="method-name">dashBoardFunctionality</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.automation.ORGTest.dashBoardFunctionality(ORGTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Suite-class-failed -->
+          <div class="suite-OrangeHRM_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.automation.ORGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="recruitmentFunctionality">
+                  </a> <!-- recruitmentFunctionality -->
+                  <span class="method-name">recruitmentFunctionality</span>
+                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@4504d271 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@4504d271]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -156,11 +238,30 @@
                   <a name="recruitmentFunctionality">
                   </a> <!-- recruitmentFunctionality -->
                   <span class="method-name">recruitmentFunctionality</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@75390459 depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@75390459]
+                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@1ef3efa8 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@1ef3efa8]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames
 </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Suite-class-skipped -->
+          <div class="suite-OrangeHRM_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.ORGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionality">
+                  </a> <!-- verifyLoginFunctionality -->
+                  <span class="method-name">verifyLoginFunctionality</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -168,11 +269,6 @@
                   <a name="verifyLoginFunctionality">
                   </a> <!-- verifyLoginFunctionality -->
                   <span class="method-name">verifyLoginFunctionality</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.automation.ORGTest.verifyLoginFunctionality() on instance com.automation.ORGTest@75390459 depends on not successfully finished methods 
-[com.automation.ORGTest.verifyLoginPageTitle() on instance com.automation.ORGTest@75390459]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -180,53 +276,42 @@
                   <a name="verifyLoginPageTitle">
                   </a> <!-- verifyLoginPageTitle -->
                   <span class="method-name">verifyLoginPageTitle</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: msedgedriver, error Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:124)
-	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:55)
-	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
-	at com.automation.factory.DriverFactory.getDriver(DriverFactory.java:52)
-	at com.automation.baseClass.BaseClass.setUp(BaseClass.java:47)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, MicrosoftEdge, --language-binding, java, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_149_LINUX)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.8.0-124-generic&apos;, java.version: &apos;21.0.11&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:173)
-	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:254)
-	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:104)
-	... 29 more
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageTitle">
+                  </a> <!-- verifyLoginPageTitle -->
+                  <span class="method-name">verifyLoginPageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Suite-class-skipped -->
+          </div> <!-- suite-OrangeHRM_Suite-class-passed -->
         </div> <!-- panel OrangeHRM_Suite -->
         <div panel-name="test-xml-OrangeHRM_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/prithvirajjadhavrao/Documents/selenium-framework/testng.xml</span>
+            <span class="header-content">/home/prithvirajjadhavrao/Documents/selenium-framework/testng-parallel.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;OrangeHRM Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;OrangeHRM Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.automation.listeners.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;UI Tests&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Chrome Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.automation.ORGTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- UI Tests --&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Firefox Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.ORGTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Firefox Test --&gt;
 &lt;/suite&gt; &lt;!-- OrangeHRM Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,7 +323,10 @@ Driver info: driver.version: EdgeDriver
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">UI Tests (1 class)</span>
+                <span class="test-name">Chrome Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Firefox Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,28 +352,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'dashBoardFunctionality')
 data.setCell(0, 2, 'com.automation.ORGTest')
-data.setCell(0, 3, 1);
+data.setCell(0, 3, 12054);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginFunctionality')
+data.setCell(1, 1, 'dashBoardFunctionality')
 data.setCell(1, 2, 'com.automation.ORGTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 11081);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginPageTitle')
+data.setCell(2, 1, 'verifyLoginFunctionality')
 data.setCell(2, 2, 'com.automation.ORGTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 6990);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'recruitmentFunctionality')
+data.setCell(3, 1, 'verifyLoginFunctionality')
 data.setCell(3, 2, 'com.automation.ORGTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 4113);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginPageTitle')
+data.setCell(4, 2, 'com.automation.ORGTest')
+data.setCell(4, 3, 16);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginPageTitle')
+data.setCell(5, 2, 'com.automation.ORGTest')
+data.setCell(5, 3, 6);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'recruitmentFunctionality')
+data.setCell(6, 2, 'com.automation.ORGTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'recruitmentFunctionality')
+data.setCell(7, 2, 'com.automation.ORGTest')
+data.setCell(7, 3, 0);
 window.suiteTableData['OrangeHRM_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 ms</span>
+              <span class="suite-total-time">Total running time: 53 seconds</span>
               <div id="times-div-OrangeHRM_Suite">
               </div> <!-- times-div-OrangeHRM_Suite -->
             </div> <!-- times-div -->
@@ -313,11 +417,53 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.ORGTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp</span>
+                <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">11982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality</span>
+                <span class="method-start">12001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dashBoardFunctionality</span>
+                <span class="method-start">18994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31344 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageTitle</span>
+                <span class="method-start">37817 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality</span>
+                <span class="method-start">37825 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dashBoardFunctionality</span>
+                <span class="method-start">41942 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">53086 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

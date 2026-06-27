@@ -19,7 +19,7 @@ public class ORGTest extends BaseClass {
     public void verifyLoginPageTitle() {
         
         String expectedTitle = "OrangeHRM";
-        String actualTitile = driver.getTitle();
+        String actualTitile = getDriver().getTitle();
         Assert.assertEquals(expectedTitle, actualTitile);
     }
 
@@ -27,7 +27,7 @@ public class ORGTest extends BaseClass {
     public void verifyLoginFunctionality() throws InterruptedException
     {
       ConfigReader config = ConfigReader.getInstance();
-      login = new LoginPage(driver);
+      login = new LoginPage(getDriver());
       login.credentials(config.getProperty("username"),config.getProperty("password"));
       Thread.sleep(2000);
     }
@@ -35,7 +35,7 @@ public class ORGTest extends BaseClass {
     @Test(dependsOnMethods = "verifyLoginFunctionality")
     public void dashBoardFunctionality() throws InterruptedException
     {
-      dash = new DashBoardPage(driver);
+      dash = new DashBoardPage(getDriver());
       dash.listOfMenu();
       Thread.sleep(10000);
       Assert.assertTrue(false);
@@ -44,7 +44,7 @@ public class ORGTest extends BaseClass {
     @Test(dependsOnMethods = "dashBoardFunctionality")
     public void recruitmentFunctionality() throws InterruptedException
     {
-      rec = new RecruitmentPage(driver);
+      rec = new RecruitmentPage(getDriver());
       rec.RecruitmentTab();
       Thread.sleep(10000);
       rec.candidateList();

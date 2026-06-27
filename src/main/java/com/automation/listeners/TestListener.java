@@ -17,6 +17,8 @@ public class TestListener implements ITestListener {
 
     ExtentTest test;
 
+    //private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+
     @Override
     public void onTestStart(ITestResult result)
     {
@@ -36,7 +38,7 @@ public class TestListener implements ITestListener {
 
         String path =
             ScreenshotUtil.captureScreenshot(
-                    BaseClass.driver,
+                    BaseClass.getDriver(),
                     result.getMethod().getMethodName());
 
     try
