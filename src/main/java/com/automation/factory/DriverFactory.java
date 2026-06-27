@@ -11,49 +11,85 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriverFactory {
+public final class DriverFactory {
 
-    public static WebDriver getDriver(String browser) {
+    private DriverFactory() {
+        // Prevent object creation
+    }
 
-        if(browser == null || browser.trim().isEmpty()) 
-        {
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
+
+    public static void initializeDriver(String browser) {
+
+        if (browser == null || browser.isBlank()) {
             throw new RuntimeException("Browser name cannot be null or empty.");
         }
 
         switch (browser.toLowerCase()) {
 
             case "chrome":
-
-                WebDriverManager.chromedriver().setup();
-
-                ChromeOptions options = new ChromeOptions();
-
-                options.addArguments("--disable-notifications");
-                options.addArguments("--disable-infobars");
-                options.addArguments("--disable-popup-blocking");
-
-                Map<String, Object> prefs = new HashMap<>();
-
-                prefs.put("credentials_enable_service", false);
-                prefs.put("profile.password_manager_enabled", false);
-
-                options.setExperimentalOption("prefs", prefs);
-
-                return new ChromeDriver(options);
+                driver.set(createChromeDriver());
+                break;
 
             case "firefox":
-
-                WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+                driver.set(createFirefoxDriver());
+                break;
 
             case "edge":
-
-                //WebDriverManager.edgedriver().setup();
-                return new EdgeDriver();
+                driver.set(createEdgeDriver());
+                break;
 
             default:
-
                 throw new RuntimeException("Invalid Browser : " + browser);
         }
+    }
+
+    public static void quitDriver() {
+
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
+        }
+    }
+
+    private static WebDriver createChromeDriver() {
+
+        WebDriverManager.chromedriver().setup();
+
+        return new ChromeDriver(getChromeOptions());
+    }
+
+    private static WebDriver createFirefoxDriver() {
+
+        WebDriverManager.firefoxdriver().setup();
+
+        return new FirefoxDriver();
+    }
+
+    private static WebDriver createEdgeDriver() {
+
+        return new EdgeDriver();
+    }
+
+    private static ChromeOptions getChromeOptions() {
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--disable-notifications");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-popup-blocking");
+
+        Map<String, Object> prefs = new HashMap<>();
+
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+
+        options.setExperimentalOption("prefs", prefs);
+
+        return options;
     }
 }

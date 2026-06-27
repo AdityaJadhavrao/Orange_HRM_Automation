@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="8" passed="4" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-27T23:44:26 IST" name="OrangeHRM Suite" finished-at="2026-06-27T23:45:20 IST" duration-ms="53484">
+  <suite started-at="2026-06-28T00:53:55 IST" name="OrangeHRM Suite" finished-at="2026-06-28T00:54:16 IST" duration-ms="21160">
     <groups>
     </groups>
-    <test started-at="2026-06-27T23:44:26 IST" name="Chrome Test" finished-at="2026-06-27T23:44:58 IST" duration-ms="31411">
+    <test started-at="2026-06-28T00:53:55 IST" name="Chrome Test" finished-at="2026-06-28T00:54:16 IST" duration-ms="21034">
       <class name="com.automation.ORGTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:26 IST" name="setUp" finished-at="2026-06-27T23:44:38 IST" duration-ms="11946" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:53:55 IST" name="setUp" finished-at="2026-06-28T00:53:59 IST" duration-ms="3579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:38 IST" name="verifyLoginPageTitle" finished-at="2026-06-27T23:44:38 IST" duration-ms="16" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:53:59 IST" name="verifyLoginPageTitle" finished-at="2026-06-28T00:53:59 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:38 IST" name="verifyLoginFunctionality" finished-at="2026-06-27T23:44:45 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="6990" status="PASS">
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:53:59 IST" name="verifyLoginFunctionality" finished-at="2026-06-28T00:54:01 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="2837" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFunctionality -->
-        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:45 IST" name="dashBoardFunctionality" finished-at="2026-06-27T23:44:57 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="12054" status="FAIL">
+        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:54:01 IST" name="dashBoardFunctionality" finished-at="2026-06-28T00:54:12 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="11013" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -64,15 +64,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardFunctionality -->
-        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:58 IST" name="recruitmentFunctionality" finished-at="2026-06-27T23:44:58 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
+        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:54:16 IST" name="recruitmentFunctionality" finished-at="2026-06-28T00:54:16 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@4504d271 depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@4504d271]]]>
+              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@57ac5227 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@57ac5227]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@4504d271 depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@4504d271]
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@57ac5227 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@57ac5227]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -92,19 +92,19 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitmentFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@4504d271]" started-at="2026-06-27T23:44:58 IST" name="tearDown" finished-at="2026-06-27T23:44:58 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@57ac5227]" started-at="2026-06-28T00:54:16 IST" name="tearDown" finished-at="2026-06-28T00:54:16 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.ORGTest -->
     </test> <!-- Chrome Test -->
-    <test started-at="2026-06-27T23:44:26 IST" name="Firefox Test" finished-at="2026-06-27T23:45:20 IST" duration-ms="53484">
+    <test started-at="2026-06-28T00:53:55 IST" name="Firefox Test" finished-at="2026-06-28T00:54:16 IST" duration-ms="21160">
       <class name="com.automation.ORGTest">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:44:26 IST" name="beforeSuite" finished-at="2026-06-27T23:44:26 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:53:55 IST" name="beforeSuite" finished-at="2026-06-28T00:53:55 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:44:26 IST" name="setUp" finished-at="2026-06-27T23:45:04 IST" duration-ms="37786" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:53:55 IST" name="setUp" finished-at="2026-06-28T00:54:01 IST" duration-ms="5899" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,15 +115,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:45:04 IST" name="verifyLoginPageTitle" finished-at="2026-06-27T23:45:04 IST" duration-ms="6" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:54:01 IST" name="verifyLoginPageTitle" finished-at="2026-06-28T00:54:01 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:45:04 IST" name="verifyLoginFunctionality" finished-at="2026-06-27T23:45:08 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="4113" status="PASS">
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:54:01 IST" name="verifyLoginFunctionality" finished-at="2026-06-28T00:54:04 IST" depends-on-methods="com.automation.ORGTest.verifyLoginPageTitle" duration-ms="3368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginFunctionality -->
-        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:45:08 IST" name="dashBoardFunctionality" finished-at="2026-06-27T23:45:19 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="11081" status="FAIL">
+        <test-method signature="dashBoardFunctionality()[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:54:04 IST" name="dashBoardFunctionality" finished-at="2026-06-28T00:54:16 IST" depends-on-methods="com.automation.ORGTest.verifyLoginFunctionality" duration-ms="11285" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -161,15 +161,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashBoardFunctionality -->
-        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:45:19 IST" name="recruitmentFunctionality" finished-at="2026-06-27T23:45:19 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="0" status="SKIP">
+        <test-method signature="recruitmentFunctionality()[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:54:16 IST" name="recruitmentFunctionality" finished-at="2026-06-28T00:54:16 IST" depends-on-methods="com.automation.ORGTest.dashBoardFunctionality" duration-ms="1" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@1ef3efa8 depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@1ef3efa8]]]>
+              <![CDATA[Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@488eb7f2 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@488eb7f2]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@1ef3efa8 depends on not successfully finished methods 
-[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@1ef3efa8]
+              <![CDATA[java.lang.Throwable: Method com.automation.ORGTest.recruitmentFunctionality() on instance com.automation.ORGTest@488eb7f2 depends on not successfully finished methods 
+[com.automation.ORGTest.dashBoardFunctionality() on instance com.automation.ORGTest@488eb7f2]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -189,7 +189,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recruitmentFunctionality -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@1ef3efa8]" started-at="2026-06-27T23:45:19 IST" name="tearDown" finished-at="2026-06-27T23:45:20 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.ORGTest@488eb7f2]" started-at="2026-06-28T00:54:16 IST" name="tearDown" finished-at="2026-06-28T00:54:16 IST" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
