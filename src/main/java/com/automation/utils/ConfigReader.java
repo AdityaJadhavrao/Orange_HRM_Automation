@@ -15,19 +15,32 @@ public class ConfigReader {
 
         prop = new Properties();
 
-        try {
+        try
+        {
+            String env = System.getProperty("env");
 
-            String path = System.getProperty("user.dir") + "/src/main/resources/config.properties";
+            //Default Environment 
+            if(env==null || env.trim().isEmpty())
+            {
+                env = "qa";
+            }
+
+            System.out.println("Environment : " + env);
+
+            String path = System.getProperty("user.dir") + "/src/main/resources/config/" + env.toLowerCase() + ".properties";
+
+            System.out.println("Loading : " + path);
 
             FileInputStream fis = new FileInputStream(path);
 
             prop.load(fis);
 
         }
-        catch(Exception e) {
+
+         catch (Exception e) 
+        {
             e.printStackTrace();
         }
-
     }
 
     // Return same object every time (Singleton class)
