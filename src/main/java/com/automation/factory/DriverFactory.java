@@ -49,7 +49,6 @@ public class DriverFactory {
             case "edge":
 
                 //WebDriverManager.edgedriver().setup();
-                System.out.println("Inside Edge Case");
                 return new EdgeDriver();
 
             default:

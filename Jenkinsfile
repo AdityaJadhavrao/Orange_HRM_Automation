@@ -7,6 +7,16 @@ tools {
     maven 'Maven3'
 }
 
+parameters {
+
+    choice(
+        name: 'BROWSER',
+        choices: ['chrome', 'firefox', 'edge'],
+        description: 'Select Browser'
+    )
+
+}
+
 environment {
     MAVEN_OPTS = '-Xmx1024m'
 }
@@ -34,10 +44,13 @@ stages {
     }
 
     stage('Run Tests') {
-        steps {
-            sh 'mvn test'
-        }
+    steps {
+
+        echo "Running tests on ${params.BROWSER}"
+
+        sh "mvn clean test -Dbrowser=${params.BROWSER}"
     }
+}
 
     stage('Verify Reports') {
         steps {
